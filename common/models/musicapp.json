@@ -1,0 +1,28 @@
+{
+  "name": "musicapp",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "rate": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "generes": {
+      "type": "belongsTo",
+      "model": "generes",
+      "foreignKey": "generes_fk"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

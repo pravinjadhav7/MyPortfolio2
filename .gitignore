@@ -1,0 +1,16 @@
+node_modules
+.sass-cache
+bower_components
+
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+*.swo
+*.swp
+*.tgz
+*.xml

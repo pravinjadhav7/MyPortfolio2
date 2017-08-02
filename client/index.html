@@ -1,0 +1,128 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Pravin Jadhav</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Arvo:700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>-->
+        
+</head>
+<body ng-app="app" class="bg-fixed bg-1"> 
+    <div class="main-container">
+         <div class="main wrapper clearfix">
+               
+            <!-- Header Start -->
+            <header id="header">
+             <div id="logo">
+                 <h2>
+                     Pravin Jadhav
+                 </h2>    
+             </div>
+            </header>
+            
+            <!-- Header End -->            
+            <div id="tab-container" class="tab-container">
+                <!-- Tab List -->
+    
+            <ul class='etabs'>
+                <li class='tab' id="tab-about">
+                  <a ui-sref="about"><i class="icon-user"></i><span> About Me</span></a>
+                </li>
+                <li class='tab'id="tab-resume">
+                  <a ui-sref="resume" ><i class="icon-file-text"></i><span> Resume</span></a>
+                </li>
+                <li class='tab'id="tab-portfolio">
+                  <a ui-sref="portfolio"><i class="material-icons">important_devices</i><span>Projects</span></a>
+                </li>
+                <li class='tab' id="tab-contact">
+                  <a ui-sref="contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                </li>
+            </ul>
+    
+          <!-- End Tab List -->
+            <div id="tab-data-wrap">
+                  
+
+                <div class="col s10">
+                    <div ui-view></div>
+                </div>
+
+            </div>
+        </div>
+            <footer class="page-footer">
+         <div class="footer-copyright">
+            <div class="container">
+                 <div class="break"></div>
+                        <div class="contact-info">
+                          <div class="g1 social-info">
+                            <div class="">
+                              <div class="item-data">  
+                                <a href="mailto:pravinjadhav762@gmail.com">
+                                    <img src="https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="g1 social-info">
+                            <div class="">
+                              <div class="item-data">
+                                <a href="https://www.facebook.com/pravinkumar.jadhav1">
+                                    <img src="https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png">   
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="g1 social-info">
+                            <div class="">
+                              <div class="item-data">
+                                <a href="https://twitter.com/pravinjadhav762">
+                                <img src="https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="g1 social-info">
+                            <div class="">
+                              <div class="item-data">
+                                <a href="https://github.com/pravinjadhav7">
+                                <img src="images/github-circle.png">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+          </div>
+        </footer>
+
+        </div>
+    </div>
+
+   
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+
+<script src="js/services/lb-services.js"></script>
+<script src="controller/app.js"></script>
+<script src="controller/main.js"></script>
+<script src="controller/contactController.js"></script>
+<script src="controller/aboutController.js"></script>
+<script src="controller/portfolioController.js"></script>
+<script src="controller/resumeController.js"></script>
+</body>
+
+</html>
